@@ -213,6 +213,7 @@ section at the end of this file).
  * usbFunctionWrite(). Use the global usbCurrentDataToken and a static variable
  * for each control- and out-endpoint to check for duplicate packets.
  */
+//#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   0		<--- (bug) if not using micronucleus bootloader
 #define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   1
 #include "osccal.h"
 /* define this macro to 1 if you want the function usbMeasureFrameLength()
