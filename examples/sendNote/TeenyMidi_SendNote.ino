@@ -1,3 +1,11 @@
+/*---------------------------------------------------------------------------------------------
+
+  TeenyMidi Library
+  based on Gnusbuino MIDI Library 2012 by Michael Egger
+ 
+---------------------------------------------------------------------------------------------*/
+
+
 #include "TeenyMidi.h"
 
 unsigned long lastTime;            // variable to store the last time we sent a chord
