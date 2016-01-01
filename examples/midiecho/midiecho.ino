@@ -11,22 +11,22 @@
 --------------------------------------------------------------------------------------------- */
 
  
-#include "TeenyMidi.h"            // you have to include the TeenyMidi library
+#include "TeenyMidi.h" // you have to include the TeenyMidi library
 
-MIDIMessage message;        // Variable to hold most recent midi message
+MIDIMessage message;// Variable to hold most recent midi message
 
-void setup() {               // nothing to do in setup, pins are inputs by default
-	MIDI.init();
+void setup() {
+
 }
 
 
 void loop() {
   
-    if (MIDI.read(&message)) {                                    // need to put the ampersand "&" before "message"
-        MIDI.write(message.command,message.key,message.value);
+    if (TeenyMidi.read(&message)) {                                    // need to put the ampersand "&" before "message"
+        TeenyMidi.send(message.command,message.key,message.value);
     }
 
-    MIDI.flush();
+    TeenyMidi.update();
     
  }
  
