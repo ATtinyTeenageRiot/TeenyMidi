@@ -11,6 +11,8 @@
 #ifndef __usbconfig_h_included__
 #define __usbconfig_h_included__
 
+#include "TeenyMidiConfig.h"
+
 /*
 General Description:
 This file is an example configuration (with inline documentation) for the USB
@@ -25,6 +27,8 @@ section at the end of this file).
 */
 
 /* ---------------------------- Hardware Config ---------------------------- */
+
+#ifndef TEENYMIDI_ENABLE_CUSTOM_USB_CFG
 
 #if defined (__AVR_ATtiny44__) || defined (__AVR_ATtiny84__)
 #define USB_CFG_IOPORTNAME      B
@@ -51,6 +55,9 @@ section at the end of this file).
 #define USB_CFG_DMINUS_BIT      3
 #define USB_CFG_DPLUS_BIT       2
 #endif
+
+#endif
+
 /* This is the bit number in USB_CFG_IOPORT where the USB D+ line is connected.
  * This may be any bit in the port. Please note that D+ must also be connected
  * to interrupt pin INT0! [You can also use other interrupts, see section
@@ -384,7 +391,9 @@ section at the end of this file).
 /* #define USB_INTR_PENDING_BIT    INTF0 */
 /* #define USB_INTR_VECTOR         SIG_INTERRUPT0 */
 
- #ifndef SIG_INTERRUPT0
+#ifndef TEENYMIDI_ENABLE_CUSTOM_DPLUS_INTERRUPT
+
+#ifndef SIG_INTERRUPT0
 #define SIG_INTERRUPT0			_VECTOR(1)
 #endif
 
@@ -408,5 +417,6 @@ section at the end of this file).
 #define USB_INTR_VECTOR         PCINT1_vect
 #endif
 
+#endif
 
 #endif /* __usbconfig_h_included__ */
