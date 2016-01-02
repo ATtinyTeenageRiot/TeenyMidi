@@ -17,7 +17,8 @@
 MIDIMessage message;          
 
 void setup() {  
-  pinMode(3,OUTPUT);         
+  pinMode(3,OUTPUT);     
+  TeenyMidi.init();    
 }
 
 

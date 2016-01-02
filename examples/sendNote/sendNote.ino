@@ -11,7 +11,7 @@
 unsigned long lastTime;            // variable to store the last time we sent a chord
 
 void setup() {
-
+  TeenyMidi.init();
 }
 
 

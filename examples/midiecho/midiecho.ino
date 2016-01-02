@@ -16,7 +16,7 @@
 MIDIMessage message;// Variable to hold most recent midi message
 
 void setup() {
-
+  TeenyMidi.init();
 }
 
 

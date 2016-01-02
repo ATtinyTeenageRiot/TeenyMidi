@@ -23,7 +23,7 @@ unsigned char sentValue = 255;         // we only want to send data when there's
                              // so we have to keep track of the last value that was sent to the host
 
 void setup() {               
-
+  TeenyMidi.init();
 }
 
 

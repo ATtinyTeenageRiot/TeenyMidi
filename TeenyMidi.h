@@ -346,7 +346,7 @@ private:
     unsigned char _midiRecvQueue [MIDI_MAX_BUFFER * 3];
 
  public:
-  TeenyMidiDevice () {
+  void init () {
     cli();
     usbDeviceDisconnect();
     _delay_ms(250);
