@@ -18,20 +18,10 @@ TeenyMidi Library (based on GnusbuinoMidi)
 
 #include "usbdrv.h"
 
-/* Name: desc_midi.inc
- * Project: V-USB MIDI device on Low-Speed USB
- * Author: Martin Homuth-Rosemann
- * Creation Date: 2008-03-11
- * Copyright: (c) 2008,2009,2010 by Martin Homuth-Rosemann.
- * License: GPL.
- * Version: 0.03
- */
-
 #define DEC 10
 #define HEX 16
 #define OCT 8
 #define BIN 2
-
 
 #define MIDI_NOTEOFF      0x80
 #define MIDI_NOTEON       0x90
@@ -50,7 +40,14 @@ TeenyMidi Library (based on GnusbuinoMidi)
 #define MIDI_CONTINUE     0xFB
 #define MIDI_STOP       0xFC
 
-
+/* Name: desc_midi.inc
+ * Project: V-USB MIDI device on Low-Speed USB
+ * Author: Martin Homuth-Rosemann
+ * Creation Date: 2008-03-11
+ * Copyright: (c) 2008,2009,2010 by Martin Homuth-Rosemann.
+ * License: GPL.
+ * Version: 0.03
+ */
 
 // This descriptor is based on http://www.usb.org/developers/devclass_docs/midi10.pdf
 // constants from midi10.pdf
