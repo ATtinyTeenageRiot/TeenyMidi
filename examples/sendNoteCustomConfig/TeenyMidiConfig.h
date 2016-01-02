@@ -6,16 +6,16 @@
 
 //#define TEENYMIDI_ENABLE_ANDROID		//hack to make device compatible with android device but broke on windows
 //#define TEENYMIDI_WITH_AUDIO_CONTROL	//enable virtual dummy audio device
-//#define TEENYMIDI_ENABLE_DIRECT_BOOT	//disable calibration
+#define TEENYMIDI_ENABLE_DIRECT_BOOT	//disable calibration
 
 //
 // Custom USB D+ and D- pin
 //
 
-//#define TEENYMIDI_ENABLE_CUSTOM_USB_CFG
-//#define USB_CFG_IOPORTNAME B
-//#define USB_CFG_DMINUS_BIT 5
-//#define USB_CFG_DPLUS_BIT 3
+#define TEENYMIDI_ENABLE_CUSTOM_USB_CFG
+#define USB_CFG_IOPORTNAME B
+#define USB_CFG_DMINUS_BIT 5
+#define USB_CFG_DPLUS_BIT 1
 
 
 //
