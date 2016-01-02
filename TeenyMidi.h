@@ -14,7 +14,7 @@ TeenyMidi Library (based on GnusbuinoMidi)
 #include <avr/delay.h>
 #include <string.h>
 
-#include "TeenyMidiConfig.h"
+#include <TeenyMidiConfig.h>
 
 #include "usbdrv.h"
 
