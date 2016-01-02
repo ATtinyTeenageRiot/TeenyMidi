@@ -346,9 +346,6 @@ private:
     unsigned char _midiRecvDequeueIdx;
     unsigned char _midiRecvQueue [MIDI_MAX_BUFFER * 3];
 
-    char * _sysex_buffer;
-    unsigned char _sysex_idx;
-    unsigned char _sysex_len;
  public:
   TeenyMidiDevice () {
     cli();
