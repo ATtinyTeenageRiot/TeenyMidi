@@ -220,9 +220,15 @@ section at the end of this file).
  * usbFunctionWrite(). Use the global usbCurrentDataToken and a static variable
  * for each control- and out-endpoint to check for duplicate packets.
  */
-//#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   0		<--- (bug) if not using micronucleus bootloader
+//#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   0		<--- uncomment if you use barebone avr (without bootloader)
+
+#ifdef TEENYMIDI_ENABLE_DIRECT_BOOT
+#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   0
+#else
 #define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   1
 #include "osccal.h"
+#endif
+
 /* define this macro to 1 if you want the function usbMeasureFrameLength()
  * compiled in. This function can be used to calibrate the AVR's RC oscillator.
  */
