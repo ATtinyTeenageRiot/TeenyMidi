@@ -13,9 +13,9 @@
 //
 
 //#define TEENYMIDI_ENABLE_CUSTOM_USB_CFG
-//#define USB_IOPORTNAME B	//when custom cfg disabled default is B
-//#define USB_DMINUS 5	//when custom cfg disabled default is 5
-//#define USB_DPLUS 3	//when custom cfg disabled default is 3
+//#define USB_CFG_IOPORTNAME B	//when custom cfg disabled default is B
+//#define USB_CFG_DMINUS_BIT 5	//when custom cfg disabled default is 5
+//#define USB_CFG_DPLUS_BIT 3	//when custom cfg disabled default is 3
 
 
 //
