@@ -18,6 +18,11 @@ TeenyMidi Library (based on GnusbuinoMidi)
 
 #include "usbdrv.h"
 
+// this is from original midi_gnusb.h
+#define ADC_MUX_MASK            0x0F
+#define ADC_PRESCALE_DIV64      0x06    ///< 0x06 -> CPU clk/64
+#define ADC_PRESCALE_MASK       0x07
+
 #define DEC 10
 #define HEX 16
 #define OCT 8
