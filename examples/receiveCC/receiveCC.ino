@@ -33,6 +33,7 @@ void loop() {
         }
     }    
     
+    TeenyMidi.update();
  }
  
  
